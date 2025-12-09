@@ -1,19 +1,21 @@
-// Write your solution in this file!
+
 // Step 1: Declare global variables
 const burgers = ['Hamburger', 'Cheeseburger'];
 let featuredDrink = 'Strawberry Milkshake';
+
 // Step 2: Write addBurger function
 function addBurger() {
     // Create function-scoped variable
-    var newBurger = 'Flatburger';
+    const newBurger = 'Flatburger';
     
     // Add newBurger to burgers array
     burgers.push(newBurger);
 }
+
 // Step 3: if statement with block-scoped variable
-if (true) {
+if(true) {
     // Create block-scoped variable
-    let anotherNewBurger = 'Maple Bacon Burger';
+    const anotherNewBurger = 'Maple Bacon Burger';
     
     // Add anotherNewBurger to burgers array
     burgers.push(anotherNewBurger);
